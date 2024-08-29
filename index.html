@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Gian Baluyot - Web Developer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('images/gian.png') no-repeat center center fixed; 
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100vh;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        h2 { 
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        h2 .highlight {
+            color: green;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 18px;
+            position: relative;
+            padding-left: 20px; 
+        }
+        nav a::before {
+            content: '>';
+            color: white;
+            position: absolute;
+            left: 0;
+            transition: color 0.3s;
+        }
+        nav a:hover,
+        nav a:hover::before {
+            color: green;
+            text-decoration: underline;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .social-icons a:hover {
+            color: green;
+        }
+        .content {
+            margin-left: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Jan Gian Baluyot</h1>
+            <h2>Aspiring <span class="highlight">Web Developer</span> from Bataan Heroes College</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+                <a href="project.html">Project</a>
+                <a href="contact.html">Contact</a>
+               
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gian.baluyot?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/gianbaluyot/?igsh=MWUwY2RnYTNoMnA0MQ%3D%3D"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

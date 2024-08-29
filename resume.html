@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Jan Gian Baluyot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('images/gian.png') no-repeat center center fixed; 
+            background-size: cover;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding: 10px 50px;
+            background-color: black;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
+        .header a:hover {
+            color: green;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+            margin-right: 50px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            flex: 1;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: green;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .resume-header {
+            width: 80%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .resume-header h2 {
+            margin: 0;
+            font-size: 24px;
+            border-bottom: 2px solid green;
+            padding-bottom: 10px;
+            flex-grow: 1;
+        }
+        .download-button {
+            background-color: black;
+            border: 2px solid green;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        .download-button:hover {
+            background-color: green;
+            color: white;
+        }
+        .resume-section {
+            width: 80%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .resume-section h3 {
+            color: green;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .resume-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+        }
+        .resume-item h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .resume-item p {
+            margin: 5px 0;
+        }
+        .resume-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+        .resume-item ul li {
+            margin: 5px 0;
+        }
+        .resume-icon {
+            position: relative;
+            margin-right: 10px;
+            width: 20px;
+            flex-shrink: 0;
+        }
+        .resume-icon::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: green;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .date-box {
+            display: inline-block;
+            padding: 2px 8px;
+            background-color: #333;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .certificate-image {
+            max-width: 250px;
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            margin: 15% auto;
+            display: block;
+            max-width: 80%;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>Jan Gian Baluyot</h1></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="resume-header">
+            <h2>EDUCATIONAL BACKGROUND</h2>
+            <a href="cv/cv.pdf" class="download-button" download>Download CV</a>
+        </div>
+        <div class="resume-section">
+            <h3>Academic Records</h3>
+            <div class="resume-item">
+                <div class="resume-icon"></div>
+                <div>
+                    <h4>Bataan Heroes College</h4>
+                    <div class="date-box">2020 - Present</div>
+                    <ul>
+                        <li>Bachelor of Science in Computer Engineering</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-item">
+                <div class="resume-icon"></div>
+                <div>
+                    <h4>Jose Rizal Institute</h4>
+                    <div class="date-box">2018 - 2020</div>
+                    <ul>
+                        <li>ICT - Major in Drafting</li>
+                        <li>Autocad, Sketch Up</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-item">
+                <div class="resume-icon"></div>
+                <div>
+                    <h4>Jose Rizal Institute</h4>
+                    <div class="date-box">2014 - 2018</div>
+                    <ul>
+                        <li>Junior Highschool</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="resume-section">
+            <h3>Experience/Internship</h3>
+            <div class="resume-item">
+                <div class="resume-icon"></div>
+                <div>
+                    <h4>Ttec Pasay City</h4>
+                    <div class="date-box">July - August 2024</div>
+                    <ul>
+                        <li>IT Support</li>
+                        <li>Desktop Support</li>
+                        <li>Completed 240 hours of On the Job Training</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="resume-header">
+            <h2>MY CERTIFICATIONS</h2>
+        </div>
+        <div class="resume-section">
+            <div class="resume-item">
+                <div class="resume-icon"></div>
+                <div>
+                    <img src="images/cert1.jfif" alt="Certificate 1" class="certificate-image" onclick="openModal('modal1')">
+                    <div class="date-box">May 2024</div>
+                    <p>iLEAP Plus on Trademarks: Registering Your Brand with IPOPHL</p>
+                </div>
+            </div>
+            <div class="resume-item">
+                <div class="resume-icon"></div>
+                <div>
+                    <img src="images/cert2.jfif" alt="Certificate 2" class="certificate-image" onclick="openModal('modal2')">
+                    <div class="date-box">July 2023</div>
+                    <p>Ttec Internship</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="modal1" class="modal">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <img class="modal-content" id="img1">
+    </div>
+    <div id="modal2" class="modal">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <img class="modal-content" id="img2">
+    </div>
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+        // Set the source of the modal images
+        document.getElementById('img1').src = "images/cert1.jfif";
+        document.getElementById('img2').src = "images/cert2.jfif";
+    </script>
+</body>
+</html>

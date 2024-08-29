@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Jan Gian Baluyot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('images/gian.png') no-repeat center center fixed; 
+            background-size: cover;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding: 10px 50px;
+            background-color: black;
+            position: sticky;
+            top: 0;
+            z-index: 1000; 
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
+        .header a:hover {
+            color: green;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+            margin-right: 50px; 
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-start; 
+            flex: 1;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: green;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px; 
+        }
+        .about-header {
+            width: 80%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+        .about-header h2 {
+            margin: 0;
+            font-size: 24px;
+            border-bottom: 2px solid green; 
+            padding-bottom: 10px;
+            width: 100%; 
+        }
+        .about-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 1200px;
+        }
+        .about-section .image-box {
+            flex: 0 0 auto;
+            margin-right: 20px;
+        }
+        .about-section img {
+            border-radius: 10px;
+            width: 250px; 
+            height: 350px;
+        }
+        .about-text {
+            flex: 1;
+        }
+        .about-text h2 {
+            color: green;
+            font-size: 24px;
+            margin: 0;
+        }
+        .about-text .info {
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .about-text .info div {
+            margin: 10px 0; 
+            display: flex;
+            align-items: center;
+        }
+        .about-text .info div::before {
+            content: "→";
+            color: green;
+            margin-right: 10px;
+        }
+        .about-text p {
+            margin-top: 20px;
+        }
+        .interests, .skills {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px 0;
+        }
+        .interests h2, .skills h2 {
+            border-bottom: 2px solid green;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .interests-grid, .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .interest-item, .skill-item {
+            background: rgba(255, 255, 255, 0.102); 
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .interest-item img, .skill-item img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        .interest-item:hover, .skill-item:hover {
+            background-color: rgba(80, 241, 86, 0.7); 
+            transform: scale(1.05);
+        }
+        .interest-item a, .skill-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>Jan Gian Baluyot</h1></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="about-header">
+            <h2>ABOUT ME</h2>
+        </div>
+        <div class="about-section">
+            <div class="image-box">
+                <img src="images/angi.jfif" alt="Jan Gian Baluyot">
+            </div>
+            <div class="about-text">
+                <h2>COE Student | Aspiring Web Developer</h2>
+                <div class="info">
+                    <div>Birthdate: October 28, 2001</div>
+                    <div>Address: Limay, Bataan</div>
+                    <div>Phone: 09637211522</div>
+                    <div>Email: gianbaluyot1028@gmail.com</div>
+                    <div>Course: Bachelor of Science in Computer Engineering</div>
+                </div>
+                <p>
+                    Hello! I'm a graduating Computer Engineering student at Bataan Heroes College. 
+                    With a strong foundation in both hardware and software, I have honed my skills and developed a keen interest in web development.
+                    As I approach graduation, I am excited to embark on a professional journey as a web developer, 
+                    eager to create innovative and user-friendly web experiences. My portfolio showcases the projects and skills 
+                    I've acquired throughout my academic career, reflecting my passion for coding, design, and continuous learning. 
+                    Thank you for visiting my portfolio!
+                </p>
+            </div>
+        </div>
+        <div class="interests">
+            <h2>INTERESTS</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <img src="images/netflix.png.crdownload" alt="Watching Movies">
+                    <a href="#">Watching Movies</a>
+                </div>
+                <div class="interest-item">
+                    <img src="images/wifi.png" alt="Browsing Internet">
+                    <a href="#">Browsing Internet</a>
+                </div>
+                <div class="interest-item">
+                    <img src="images/games.png" alt="Online Games">
+                    <a href="#">Online Games</a>
+                </div>
+                <div class="interest-item">
+                    <img src="images/music.png" alt="Listening to Music">
+                    <a href="#">Listening to Music</a>
+                </div>
+                <div class="interest-item">
+                    <img src="images/billiard.png.crdownload" alt="Playing Billiards">
+                    <a href="#">Playing Billiards</a>
+                </div>
+                <div class="interest-item">
+                    <img src="images/ball.png.crdownload" alt="Playing Basketball">
+                    <a href="#">Playing Basketball</a>
+                </div>
+                <div class="interest-item">
+                    <img src="images/fish.png" alt="Fishing">
+                    <a href="#">Fishing</a>
+                </div>
+                <div class="interest-item">
+                    <img src="images/motor.png" alt="Motorcycling">
+                    <a href="#">Motorcycling</a>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h2>SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="images/html.png" alt="HTML">
+                    <a href="#">HTML</a>
+                </div>
+                <div class="skill-item">
+                    <img src="images/css.png" alt="CSS">
+                    <a href="#">CSS</a>
+                </div>
+                <div class="skill-item">
+                    <img src="images/c++.png" alt="C++">
+                    <a href="#">C++</a>
+                </div>
+                <div class="skill-item">
+                    <img src="images/python.png" alt="Python">
+                    <a href="#">Python</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
